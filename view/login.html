@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+    <div id="secondary-header">
+        <nav id="secondary-nav">
+            <ul id="secondary-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="/san-pham">Sản phẩm</a></li>
+                <li><a href="/thuong-hieu">Thương hiệu</a></li>
+                <li><a href="/gioi-thieu">Giới thiệu</a></li>
+                <li><a href="/cua-hang">Cửa hàng</a></li>
+                <li><a href="/lien-he">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div id="secondary-actions">
+            <a href="login.html" class="action-button blue"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+            <a href="/flash-sale" class="action-button red">FLASH SALE</a>
+        </div>
+    </div>
+    <div id="login-container">
+    <div class="glass-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="#" method="POST">
+
+                <input type="text" id="username" name="username" required placeholder="Username">
+                
+                <input type="password" id="password" name="password" required placeholder="Password">
+                
+                <div class="options">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                
+                <button type="submit">Login</button>
+
+                <p>Don't have an account? <a href="#" id="register">Register</a></p>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

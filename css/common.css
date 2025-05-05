@@ -1,0 +1,29 @@
+.title-center {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.center-row{
+    display: flex;
+    align-items: center;
+}
+
+.center-column{
+    display: flex;
+    justify-content: center;
+}
+
+.view-all-products{
+    padding: 15px 15px;
+    background-color: rgb(4, 86, 209);
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+.view-all-products:hover{
+    background-color: rgba(252, 5, 25, 0.8);
+    cursor: pointer;
+}

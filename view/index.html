@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet"  href="/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Vật liệu xây dựng</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <!-- Left Header: Logo -->
+        <div id="left-header">
+            <img src="/images/logo.jpg" alt="VLXD Giá Tốt">
+        </div>
+
+        <!-- Mid Header: Navigation and Contact -->
+        <div id="mid-header">
+            <!-- Navigation -->
+            <nav id="header-nav">
+                <form id="search-form" action="https://vlxdgiatot.com/" method="get">
+                    <input type="search" name="s" placeholder="Thỏa mãn nhu cầu trang trí nhà...">
+                    <input type="hidden" name="post_type" value="product">
+                    <input type="hidden" name="lang" value="vi">
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+                <ul id="nav-links">
+                    <li><a href="/gach-op-lat">Gạch ốp lát</a></li>
+                    <li><a href="/san-go">Sàn gỗ</a></li>
+                    <li><a href="/san-vinyl">Sàn vinyl</a></li>
+                    <li><a href="/vat-lieu-mat-dung">Vật liệu mặt dựng</a></li>
+                    <li><a href="/vat-lieu-op-tran">Vật liệu ốp trần</a></li>
+                    <li><a href="/vat-lieu-op-tuong">Vật liệu ốp tường</a></li>
+                </ul>
+            </nav>
+            <!-- Contact -->
+            <div id="header-contact">
+                <p>Tư vấn: <a href="tel:0938619989">0938619989</a></p>
+                <p>Đại lý: <a href="tel:0938417635">0938417635</a></p>
+            </div>
+        </div>
+
+        <!-- Right Header: Cart -->
+        <div id="right-header">
+            <div id="cart">
+                <h4  title="Giỏ hàng">
+                    <span>Giỏ hàng <i class="fa-solid fa-cart-shopping"></i></span>
+                    <span id="cart-count">0</span>
+                </h4>
+            </div>
+        </div>
+    </header>
+
+    <div id="secondary-header">
+      <nav id="secondary-nav">
+          <ul id="secondary-links">
+              <li><a href="/san-pham">Sản phẩm</a></li>
+              <li><a href="/thuong-hieu">Thương hiệu</a></li>
+              <li><a href="/gioi-thieu">Giới thiệu</a></li>
+              <li><a href="/cua-hang">Cửa hàng</a></li>
+              <li><a href="/lien-he">Liên hệ</a></li>
+          </ul>
+      </nav>
+      <div id="secondary-actions">
+          <a href="login.html" class="action-button blue"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+          <a href="/flash-sale" class="action-button red">FLASH SALE</a>
+      </div>
+  </div>
+  
+
+  <!-- Slide Show -->
+  <div id="slide-show">
+    <img src="/images/slide1.jpg" alt="Slide 1" class="active">
+    <img src="/images/slide2.jpg" alt="Slide 2">
+    <img src="/images/slide3.jpeg" alt="Slide 3">
+    <img src="/images/slide4.jpg" alt="Slide 4">
+    <div id="slide-dots"></div>
+  </div>
+
+  <div id="new-products-content">
+  <h1 class="title-center">Vật liệu mới</h1>
+  <div class="product-list-container"> 
+
+    <button class="prev-button" onclick="prevPage()">
+        <i class="fa-solid fa-angles-left"></i>
+      </button>
+  <div class="product-slider-wrapper">
+      <ul class="list_product_new">   
+          <li class="product">
+              <div class="img_product" style="background-image: url(/images/product.png);"></div>
+              <div class="infor_product">
+                  <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                  <div class="div_price">
+                      <a class="price">300.000đ</a>
+                      <a class="old_price">450.000đ</a>
+                  </div>
+                  <button class="add-to-cart">Thêm vào giỏ hàng</button>
+              </div>
+          </li>
+          <li class="product">
+              <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+              <div class="infor_product">
+                  <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                  <div class="div_price">
+                      <a class="price">300.000đ</a>
+                      <a class="old_price">450.000đ</a>
+                  </div>
+                  <button class="add-to-cart">Thêm vào giỏ hàng</button>
+              </div>
+          </li>
+          <li class="product">
+            <div class="img_product" style="background-image: url(/images/product3.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+          <div class="img_product" style="background-image: url(/images/product3.jpg);"></div>
+          <div class="infor_product">
+              <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+              <div class="div_price">
+                  <a class="price">300.000đ</a>
+                  <a class="old_price">450.000đ</a>
+              </div>
+              <button class="add-to-cart">Thêm vào giỏ hàng</button>
+          </div>
+      </li>
+      <li class="product">
+        <div class="img_product" style="background-image: url(/images/product3.jpg);"></div>
+        <div class="infor_product">
+            <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+            <div class="div_price">
+                <a class="price">300.000đ</a>
+                <a class="old_price">450.000đ</a>
+            </div>
+            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </div>
+    </li>
+    <li class="product">
+      <div class="img_product" style="background-image: url(/images/product3.jpg);"></div>
+      <div class="infor_product">
+          <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+          <div class="div_price">
+              <a class="price">300.000đ</a>
+              <a class="old_price">450.000đ</a>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+      </div>
+  </li>
+  <li class="product">
+    <div class="img_product" style="background-image: url(/images/product3.jpg);"></div>
+    <div class="infor_product">
+        <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+        <div class="div_price">
+            <a class="price">300.000đ</a>
+            <a class="old_price">450.000đ</a>
+        </div>
+        <button class="add-to-cart">Thêm vào giỏ hàng</button>
+    </div>
+  </li>
+      </ul>
+  </div>
+
+    <button class="next-button" onclick="nextPage()">
+        <i class="fa-solid fa-angles-right"></i>
+      </button>
+   </div>
+
+   <div class="center-column">
+      <button class="view-all-products" class="action-button blue">Xem tất cả sản phẩm</button>
+  </div>
+  </div>
+
+  <hr style="height: 2px; background-color: #333; border: none; margin: 40px auto; width: 50%;">
+
+  <div id="hot-products-content">
+    <h1 class="title-center" style="color: red;">Vật liệu bán chạy</h1>
+    <div class="product-list-container"> 
+      <ul class="list_product">   
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+        <li class="product">
+            <div class="img_product style=" style="background-image: url(/images/product2.jpg);"></div>
+            <div class="infor_product">
+                <a class="name_product">Sàn nhà siêu đẹp, siêu sao bóng rổ</a>
+                <div class="div_price">
+                    <a class="price">300.000đ</a>
+                    <a class="old_price">450.000đ</a>
+                </div>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </li>
+  
+      </ul>         
+     </div>
+     
+  
+     <div class="center-column">
+        <button class="view-all-products" class="action-button blue">Xem tất cả sản phẩm</button>
+    </div>
+    </div>
+
+    <section id="section-1">
+            <div>
+                <div>
+                    <div>
+                        <img decoding="async" width="1020" height="1020" src="https://vlxdgiatot.com/wp-content/uploads/2025/03/worker.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Thõa mãn nhu cầu trang trí ngôi nhà xinh</h2>
+                    <p>Sản phẩm được cập nhật hàng ngày. Vui lòng liên hệ qua 
+                        <a href="https://www.facebook.com/VLXDgiatot/" target="_blank" rel="noopener">Fanpage</a> hoặc 
+                        <a href="https://zalo.me/1303613114431453307" target="_blank" rel="noopener">Zalo</a> để nhận mẫu mới nhất.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <section id="section-2">
+        <div><i class="fa-solid fa-location-dot"></i><p>Giao hàng toàn quốc</p></div>
+        <div><i class="fa-solid fa-house"></i><p>5000+ sản phẩm trưng bày, bán
+            sẵn và nhận sản xuất đồ nội thất</p></div>
+        <div><i class="fa-solid fa-computer"></i><p>Mua sắm trực tiếp hoặc online.
+            Đổi trả dễ dàng</p></div>
+    </section>
+
+    <section id="section-3">
+        <h2 class="title">DANH MỤC SẢN PHẨM</h2>
+        <div class="categories">
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Gạch ốp lát">
+            <p>GẠCH ỐP LÁT</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Gạch ốp tường">
+            <p>GẠCH ỐP TƯỜNG</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Rèm cửa">
+            <p>RÈM CỬA</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Sàn gỗ">
+            <p>SÀN GỖ</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Sàn vinyl">
+            <p>SÀN VINYL</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Thảm trải sàn">
+            <p>THẢM TRẢI SÀN</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Thiết bị gia dụng">
+            <p>THIẾT BỊ GIA DỤNG</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Thiết bị vệ sinh">
+            <p>THIẾT BỊ VỆ SINH</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Vật liệu mặt dựng">
+            <p>VẬT LIỆU MẶT DỰNG</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Vật liệu ốp trần">
+            <p>VẬT LIỆU ỐP TRẦN</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Vật liệu ốp tường">
+            <p>VẬT LIỆU ỐP TƯỜNG</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/product2.jpg" alt="Không gian sống">
+            <p>KHÔNG GIAN SỐNG</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <h2 class="title">ĐÁNH GIÁ TỪ KHÁCH HÀNG</h2>
+        <div class="testimonial-container"> 
+          <div class="testimonial">
+            <img src="/images/human.jpg" alt="Trần Hà Linh">
+            <div class="stars">★★★★★</div>
+            <p><em>“Hệ thống mua hàng linh hoạt, đội ngũ chăm sóc khách hàng tận tình, tích cực và tận tụy với công việc.”</em></p>
+            <strong>Trần Hà Linh / Lào Cai</strong>
+          </div>
+          <div class="testimonial">
+            <img src="/images/human.jpg" alt="Trần Hà Linh">
+            <div class="stars">★★★★★</div>
+            <p><em>“Tiết kiệm thời gian và nguồn lực, linh hoạt và hiệu quả, tiện dụng, đội ngũ bán hàng hỗ trợ nhiệt tình. VLXDgicott xứng đáng là nơi tin cậy cho bạn.”</em></p>
+            <strong>Trần Hà Linh/ Đà Nẵng</strong>
+          </div>
+          <div class="testimonial">
+            <img src="/images/human.jpg" alt="Trần Hà Linh">
+            <div class="stars">★★★★★</div>
+            <p><em>“Với nhiều sản phẩm phong phú và nhiều thương hiệu nổi tiếng, chúng tôi đã có sự lựa chọn đúng đắn cho ngôi nhà của mình.”</em></p>
+            <strong>Trần Hà Linh / Phú Quốc, Kiên Giang</strong>
+          </div>
+
+          <div id="other-service">
+            <div><i class="fa-solid fa-book"></i> CHẾ ĐỘ BẢO HÀNH</div>
+            <div><i class="fa-solid fa-truck-fast"></i> VẬN CHUYỂN MIỄN PHÍ</div>
+            <div><i class="fa-brands fa-cc-paypal"></i> THANH TOÁN KHI NHẬN HÀNG</div> 
+            <div><i class="fa-solid fa-phone-volume"></i> CHĂM SÓC KHÁCH HÀNG 24H</div>
+        </div>
+        </div>
+
+      </section>
+      
+
+    <footer class="footer">
+        <div class="footer-top">
+          <p>
+            Website mua sắm vật liệu xây dựng với hàng ngàn lựa chọn thỏa mãn nhu cầu
+          </p>
+          <p>
+            Hotline tư vấn <span class="hotline">00000000000000</span> phục vụ từ 8AM đến 10PM mỗi ngày
+          </p>
+        </div>
+      
+        <div class="footer-main">
+          <div class="footer-column logo-column">
+            <img src="logo.png" alt="VLXDgiatot Logo" class="footer-logo">
+          </div>
+      
+          <div class="footer-column">
+            <h3>Giới thiệu & thông tin</h3>
+            <ul>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Giao hàng, lắp đặt</a></li>
+              <li><a href="#">Câu hỏi thường gặp</a></li>
+              <li><a href="#">Hướng dẫn mua hàng</a></li>
+              <li><a href="#">Đổi trả, bảo hành</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3>Liên hệ</h3>
+            <p><strong>SIÊU THỊ VLXD CHÍNH HÃNG, GIÁ TỐT</strong></p>
+            <p>Hotline mua hàng: 0938619989</p>
+            <p>Hotline đại lý: 0938417635</p>
+            <p>Email: info@vlxdgiatot.com</p>
+            <p>Website: www.vlxdgiatot.com</p>
+            <p>Địa chỉ: Số 99 Vành Đai Tây, P. An Khánh, TP. Thủ Đức, TP.HCM</p>
+            <div class="footer-social">
+              <a href="#"><img src="fb.png" alt="Facebook"></a>
+              <a href="#"><img src="mail.png" alt="Email"></a>
+              <a href="#"><img src="zalo.png" alt="Zalo"></a>
+            </div>
+          </div>
+      
+          <div class="footer-column">
+            <h3>Các điểm bán hàng</h3>
+            <p>Mở cửa: 8:30AM ~ 5:30PM mỗi ngày</p>
+            <p><strong>0938619989</strong></p>
+            <div class="payment-icons">
+              <img src="bank.png" alt="Bank Transfer">
+              <img src="cod.png" alt="Cash on Delivery">
+              <img src="shipping.png" alt="Shipping">
+            </div>
+          </div>
+      
+          <div class="footer-column">
+            <h3>Sản phẩm mới</h3>
+            <ul>
+              <li><a href="#">Sàn nhựa chịu lực</a></li>
+              <li><a href="#">Sàn vinyl chống tĩnh điện</a></li>
+              <li><a href="#">Sàn vinyl cuộn</a></li>
+              <li><a href="#">Sàn nhựa vinyl vân gỗ</a></li>
+              <li><a href="#">Thảm trải sàn sợi nylon</a></li>
+              <li><a href="#">Thảm trải sàn văn phòng</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>Copyright 2025 © VLXDgiatot.com - Designed and SEO by Key Media</p>
+        </div>
+      </footer>
+      
+      
+
+
+    <!-- Javascript import -->
+    <script src="/js/slidebar.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/new_product.js"></script>
+</body>
+</html>
